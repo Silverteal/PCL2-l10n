@@ -18,7 +18,8 @@ jobs:
           upload_translations: false
           download_sources: true
           download_translations: true
-          download_arguments : "--preserve_hierarchy"
+          download_sources_args : "--preserve-hierarchy"
+          download_translations_args: "--preserve-hierarchy"
           export_only_approved: true
           localization_branch_name: crowdin-pending
           create_pull_request: false
