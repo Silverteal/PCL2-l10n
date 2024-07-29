@@ -28,7 +28,7 @@ jobs:
           # crowdin.yml 原内容：
           # files:
           #   - source: /zh_CN.xaml
-          #     translation: /Language/%locale_with_underscore%.xaml
+          #     translation: /%locale_with_underscore%.xaml
           source: /zh_CN.xaml
           translation: /Language/%locale_with_underscore%.xaml
           download_translations_args: "--preserve-hierarchy --all"
