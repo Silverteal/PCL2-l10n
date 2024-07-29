@@ -1,7 +1,10 @@
 name: Crowdin Action
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+  push: 
+    paths:
+      - ".github/workflows/*"
 
 jobs:
   synchronize-with-crowdin:
@@ -16,11 +19,11 @@ jobs:
         with:
           upload_sources: false
           upload_translations: false
-          download_sources: true
+          download_sources: false
           download_translations: true
           config: "crowdin.yml"
           #download_sources_args: "--preserve-hierarchy"
-          #download_translations_args: "--preserve-hierarchy --pseudo --export-only-approved --all"
+          download_translations_args: "--preserve-hierarchy --pseudo --export-only-approved --all"
           export_only_approved: true
           localization_branch_name: crowdin-pending
           create_pull_request: false
