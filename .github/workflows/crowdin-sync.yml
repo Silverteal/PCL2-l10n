@@ -24,7 +24,13 @@ jobs:
           upload_translations: false
           download_sources: false
           download_translations: true
-          config: "crowdin.yml"
+          # config: "crowdin.yml"
+          # crowdin.yml 原内容：
+          # files:
+          #   - source: /zh_CN.xaml
+          #     translation: /Language/%locale_with_underscore%.xaml
+          source: /zh_CN.xaml
+          translation: /Language/%locale_with_underscore%.xaml
           download_translations_args: "--preserve-hierarchy --all --pseudo"
           export_only_approved: true
           localization_branch_name: crowdin-pending
