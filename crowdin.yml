@@ -1,3 +1,0 @@
-files:
-  - source: /zh_CN.xaml
-    translation: /%locale_with_underscore%.xaml
