@@ -23,7 +23,7 @@ jobs:
           download_translations: true
           config: "crowdin.yml"
           #download_sources_args: "--preserve-hierarchy"
-          download_translations_args: "--preserve-hierarchy --pseudo --all"
+          download_translations_args: "--preserve-hierarchy --all"
           export_only_approved: true
           localization_branch_name: crowdin-pending
           create_pull_request: false
