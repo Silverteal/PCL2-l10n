@@ -34,6 +34,7 @@ jobs:
           download_translations_args: "--preserve-hierarchy --all --pseudo"
           export_only_approved: true
           localization_branch_name: crowdin-pending
+          push_translations: true
           # 暂时设置手动打开并合并 PR
           create_pull_request: false
           # pull_request_title: '[Crowdin] New Translations'
