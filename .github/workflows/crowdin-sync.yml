@@ -31,7 +31,7 @@ jobs:
           #     translation: /Language/%locale_with_underscore%.xaml
           source: /zh_CN.xaml
           translation: /Language/%locale_with_underscore%.xaml
-          download_translations_args: "--preserve-hierarchy --all --pseudo"
+          download_translations_args: "--preserve-hierarchy --all"
           export_only_approved: true
           localization_branch_name: crowdin-pending
           push_translations: true
